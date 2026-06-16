@@ -1,0 +1,163 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Plans - Netflix</title>  
+<style>  
+*{  
+    margin:0;  
+    padding:0;  
+    box-sizing:border-box;  
+    font-family: Arial, sans-serif;  
+}  
+  
+body{  
+    background-color: #ffffff;  
+    color: #333333;  
+    min-height: 100vh;
+}  
+  
+.navbar{  
+    display:flex;  
+    justify-content:space-between;  
+    align-items:center;  
+    padding:20px 80px;  
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+}  
+  
+.logo{  
+    color:#e50914;  
+    font-size:40px;  
+    font-weight:bold;  
+    text-decoration: none;
+}  
+  
+.signout-link{
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.signout-link:hover{
+    text-decoration: underline;
+}
+
+.main-container{
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+
+.main-container h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.plans-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.plans-table th, .plans-table td{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    font-size: 16px;
+}
+
+.plans-table th{
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+}
+
+.feature-name{
+    text-align: left !important;
+    font-weight: bold;
+    color: #555555;
+}
+
+.price-tag{
+    color: #e50914;
+    font-weight: bold;
+}
+
+.btn-continue{
+    display: block;
+    width: 220px;
+    background: #e50914;  
+    color: white;  
+    border: none;  
+    padding: 15px;  
+    font-size: 18px;  
+    font-weight: bold;
+    cursor: pointer;  
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    margin: 40px auto 0;
+}
+
+.btn-continue:hover{
+    background-color: #b90710;
+}
+</style>  
+</head>  
+<body>  
+
+    <div class="navbar">  
+        <a href="index.html" class="logo">NETFLIX</a>  
+        <a href="index.html" class="signout-link">Sign Out</a>  
+    </div>  
+
+    <div class="main-container">
+        <h2>Choose the plan that's right for you</h2>
+        
+        <table class="plans-table">
+            <thead>
+                <tr>
+                    <th class="feature-name" style="color: white;">Features</th>
+                    <th>Mobile</th>
+                    <th>Basic</th>
+                    <th>Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="feature-name">Monthly Price</td>
+                    <td class="price-tag">₹149</td>
+                    <td class="price-tag">₹199</td>
+                    <td class="price-tag">₹649</td>
+                </tr>
+                <tr>
+                    <td class="feature-name">Video Quality</td>
+                    <td>Good</td>
+                    <td>Good</td>
+                    <td>Best</td>
+                </tr>
+                <tr>
+                    <td class="feature-name">Resolution</td>
+                    <td>480p</td>
+                    <td>720p</td>
+                    <td>4K + HDR</td>
+                </tr>
+                <tr>
+                    <td class="feature-name">Devices Supported</td>
+                    <td>Phone, Tablet</td>
+                    <td>Computer, TV</td>
+                    <td>All Devices</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="browse.html" class="btn-continue">Continue</a>
+    </div>
+
+</body>  
+</html>
